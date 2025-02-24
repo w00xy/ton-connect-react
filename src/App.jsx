@@ -5,7 +5,12 @@ function App() {
 
   return (
     <>
-    <TonConnectUIProvider manifestUrl="http://w00xy.github.io/ton-connect-react/tonconnect-manifest.json">
+    <TonConnectUIProvider 
+      manifestUrl="http://w00xy.github.io/ton-connect-react/tonconnect-manifest.json"
+      actionsConfiguration={{
+        twaReturnUrl: 'https://t.me/testing_ton_draindssd_bot/testing_ton_connnect'
+      }}
+    >
      <Header />
     </TonConnectUIProvider>
     </>
